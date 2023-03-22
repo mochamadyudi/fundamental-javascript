@@ -1,0 +1,2 @@
+# NATIVE JAVASCRIPT
+use EcmaScript 5
