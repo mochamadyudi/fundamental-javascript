@@ -1,12 +1,11 @@
-export const hasProperty = (object, key)=> {
+const hasProperty = (object, key)=> {
     return object.hasOwnProperty(key)
 }
 
-export const isArray = (value)=> {
+const isArray = (value)=> {
     return Array.isArray(value)
 }
-
-export default class Helpers {
+class Helpers {
     constructor(module) {}
     _resolver(object , property = []){
 
@@ -26,4 +25,10 @@ export default class Helpers {
         return 'lorem ipsum dolor sit amet'
     }
 
+}
+
+export {
+    Helpers,
+    hasProperty,
+    isArray
 }
